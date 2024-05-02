@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="Log in page style.css">
+    <script src="https://kit.fontawesome.com/f3c1b54261.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="login-box">
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </nav>
+    <img src="images para sa log in page/logo.png" class="logo">
+    <h2>Create your account</h2>
+    <form action="process-sign up.php" method="post">
+        <div>
+            <input type="text" placeholder="name" id="name" name="name">
+        </div>
+
+        <div>
+            <input type="email" placeholder="Email" id="email" name="email">
+        </div>
+        
+        <div>
+            <input type="password" placeholder="Password" id="password" name="Password">
+        </div>
+
+        <div>
+            <input type="password" placeholder="Confirm password" id="password_confirmation" name="password_confirmation">
+        </div>
+        <button>Sign up</button>
+    </form>
+    <p>Already have an account? <a href="login.php">Sign in</a></p>
+</body>
+</html>
+
+<!-- Javascript for close button-->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+
+     function close(){
+        navLinks.style.right = "0";
+     }
+
+</script>

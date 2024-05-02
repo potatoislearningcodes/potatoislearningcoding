@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-down Profile Menu</title>
+    <link rel="stylesheet" href="profile-index.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="profile images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="profile images/user.png" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                  <div class="user-info">
+                      <img src="profile images/user.png">
+                      <h2>Mark Jayson</h2>
+                  </div>
+                  <hr>
+
+                  <a href="#" class="sub-menu-link">
+                       <img src="profile images/profile.png">
+                       <p>Edit Profile</p>
+                       <span>></span>
+                  </a>
+                  <a href="#" class="sub-menu-link">
+                    <img src="profile images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                  </a>
+                  <a href="#" class="sub-menu-link">
+                    <img src="profile images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                  </a>
+                  <a href="#" class="sub-menu-link">
+                    <img src="profile images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                  </a>
+
+              </div>
+            </div>
+
+        </nav>
+    </div>
+
+    
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+
+</script>
+
+</body>
+</html>
